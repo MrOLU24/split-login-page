@@ -1,0 +1,85 @@
+body{
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    color: #575757;
+    font-weight: 500;
+}
+a{
+    color: #9D3687;
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    color: #222;
+}
+h4{
+    text-align: center;
+    font-weight: 500;
+}
+input{
+    width: 100%;
+    border: none;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #f5f5f5;
+    border-radius: 30px;
+}
+input:focus{
+    outline: 0px;
+}
+.container{
+    display: flex;
+}
+.main{
+    flex: 2;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-wrapper{
+    width: 85%;
+}
+.img-div{
+    flex: 3;
+    height: 100vh;
+    background: url(./xbox.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+.fg-div{
+   text-align: right;
+}
+.btn{
+    background: #9D3687;
+    width: 100%;
+    border-radius: 30px;
+    padding: 16px;
+    font-weight: 500;
+    color: #f5f5f5;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.foot{
+    text-align: center;
+    padding: 20px 0px;
+}
+@media (max-width: 100px) {
+    .main, 
+    .img-div{
+        flex: 1;
+    }
+}
+@media (max-width: 600px) {
+    .img-div{
+        display: none;
+    }
+}
